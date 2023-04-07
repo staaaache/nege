@@ -8,16 +8,17 @@ body{
   margin: auto;
   margin: 0;
   padding: 0;
-  background-color: #93BFCF;
+  background-color: white;
 }
 /*---Presentation---*/
 .texte-presentation  {
-  background-color: #93BFCF;
+  background-color: white;
   padding: 10px;
   font-family: 'Century Gothic', sans-serif;
 }
 #textpresentation{
   text-align: center;
+  padding: 10%;
 }
 .titrepresentation{
   display: inline-block;
@@ -44,7 +45,7 @@ body{
   left: 0;
   right: 0;
   z-index: 1000; /* pour s'assurer que la barre de navigation reste au-dessus des autres éléments */
-  background-color: #93BFCF;
+  background-color: white;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
@@ -72,7 +73,7 @@ nav#menu a.listtext {
   text-align: center;
   text-decoration: none;
   justify-content: center;
-  color: white;
+  color: #93BFCF;
   font-family: 'Century Gothic', sans-serif;
   margin-left: 1em;
   margin-right: 1em;
@@ -92,7 +93,7 @@ nav#menu a.listtext:hover {
   .hamburger {
       display: block;
       padding-left: 40%;
-      color: white;
+      color: #93BFCF;
       font-size: x-large;
   }
   .hamburger:hover {
@@ -102,7 +103,7 @@ nav#menu a.listtext:hover {
   /* Menu caché par défaut */
   nav#menu ul {
       position: absolute;
-      background-color: #6096B4;
+      background-color: white;
       width: 100%;
       flex-direction: column;
       max-height: 0;
@@ -127,14 +128,14 @@ nav#menu a.listtext:hover {
     left: 0;
     right: 0;
     z-index: 1000; /* pour s'assurer que la barre de navigation reste au-dessus des autres éléments */
-    background-color: #6096B4;
+    background-color: white;
     padding-top: 10px;
     height: 7%;
     text-align: center;
     justify-content: space-between;
   }
   nav#menu a.listtext{
-    color: white;
+    color: #93BFCF;
     padding-top: 2%;
     padding-bottom: 2%;
   }
@@ -146,6 +147,7 @@ section#contact {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10%;
 }
 
 section#contact h2 {
@@ -178,7 +180,7 @@ section#contact input[type="submit"] {
 /*Style pour l'équipe*/
 .blocequipe{
   text-align: center;
-  background-color: #93BFCF;
+  background-color: white;
   margin: 0;
   padding: 10%;
 }
@@ -203,7 +205,7 @@ section#contact input[type="submit"] {
 .notre_equipe .membre{
   width: 250px;
   margin: 5px;
-  background: #6096B4;
+  background: white;
   padding: 20px 10px;
 }
 
@@ -281,8 +283,9 @@ section#contact input[type="submit"] {
 /*----service----*/
 
 .services{
-  background: #93BFCF;
+  background: white;
   text-align: center;
+  padding: 10%;
 }
 
 .services h1{
@@ -345,7 +348,7 @@ section#contact input[type="submit"] {
 
 /*SVG*/
 .bouton {
-  background-color: #93BFCF;
+  background-color: white;
   color: #EEE9DA;
   border:2px solid #EEE9DA;
   height: 50px;
@@ -366,6 +369,7 @@ section#contact input[type="submit"] {
   position: relative;
   height: 100%;
   width: 100%;
+  background-image: url(img/03.jpg);
 }
 #Calque_1{
   margin: auto;
@@ -470,7 +474,7 @@ g {
 /* Demo styles end */
 .swiper {
   width: 100%;
-          height: 700px;
+  height: 100vh;
 }
 .swiper-slide {
   position: relative;
@@ -541,9 +545,9 @@ g {
     padding: 20px;
   }
   .swiper-description h2 {
-    font-size: 15px;
+    font-size: 20px;
   }
   .swiper-description p {
-    font-size: 6px;
+    font-size: 12px;
   }
 }
