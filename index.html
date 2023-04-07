@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/0ba2731aa5.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <script src="script.js" defer></script>
   <title>Mon Portfolio</title>
 </head>
@@ -15,6 +16,7 @@
             <div class="hamburger" onclick="toggleMenu()">☰</div>
             <ul>
                 <li><a class="listtext" href="#textpresentation">Présentation</a></li>
+                <li><a class="listtext" href="#expertise">Expertise</a></li>
                 <li><a class="listtext" href="#competences">Compétences</a></li>
                 <li><a class="listtext" href="#equipe">L'équipe</a></li>
                 <li><a class="listtext" href="#references">Références</a></li>
@@ -41,25 +43,88 @@
                 <polygon class="cls-1" points="1160.29 508.07 1265.64 452.69 1289.16 497.12 1182.26 552.25 1160.29 508.07"/>
               </g>
             </svg>
-            <img class="nancy" src="img/nancy5.png">
+            <button class="bouton" onclick="window.location.href='#textpresentation'">></button>
           </div>
         </section>
         <section id="textpresentation">
           <div class="texte-presentation">
-            <h1>Présentation de la structure</h1>
-            <p>L'urbanisme est un domaine multidisciplinaire qui se concentre sur la planification, la conception, la gestion et la réglementation du développement des villes et des communautés urbaines. C'est un domaine complexe qui implique de nombreux acteurs et parties prenantes, notamment les gouvernements locaux et régionaux, les urbanistes, les architectes, les ingénieurs, les développeurs immobiliers, les citoyens et les organisations communautaires.
-  
-              L'urbanisme est né de la nécessité de gérer la croissance rapide des villes et de résoudre les problèmes qui en découlent. Au XIXe siècle, les villes industrielles se sont développées rapidement, créant des problèmes tels que la pollution, la congestion, la pauvreté et les maladies. Les urbanistes ont été appelés à développer des solutions pour répondre à ces défis et améliorer la qualité de vie dans les villes.
-              
-              Depuis lors, l'urbanisme a évolué pour inclure des aspects tels que la durabilité, la résilience, la sécurité, l'inclusion sociale, la santé et le bien-être. Les urbanistes travaillent avec des acteurs locaux pour planifier des villes et des communautés qui sont plus efficaces, plus équitables et plus durables.
-              
-              La planification urbaine implique la conception de plans pour le développement des villes et des communautés, y compris l'emplacement et la disposition des bâtiments, des routes, des parcs, des zones commerciales et résidentielles, des transports en commun, des équipements et des infrastructures. Les urbanistes doivent également tenir compte de l'environnement naturel et des facteurs économiques, sociaux et culturels dans leur travail.
-              
-              La gestion urbaine est une autre composante importante de l'urbanisme. Elle comprend la gestion des services publics, tels que les services de transport, l'eau potable, les égouts et la gestion des déchets. Elle comprend également la gestion des espaces publics, tels que les parcs, les places et les rues, et la réglementation de l'utilisation des terres et de la construction.
-              
-              L'urbanisme est également important pour la promotion de la durabilité. Les urbanistes travaillent à créer des villes et des communautés qui sont plus efficaces en termes d'utilisation des ressources et moins polluantes. Cela peut inclure la promotion du transport en commun, de la marche et du vélo, la gestion des déchets, la gestion de l'eau et la promotion de l'énergie renouvelable.
-              
-              Enfin, l'urbanisme est crucial pour la participation des citoyens. Les urbanistes travaillent avec les communautés locales pour élaborer des plans et des politiques qui répondent aux besoins des citoyens. Ils tiennent des réunions publiques et des consultations pour obtenir des commentaires et des suggestions sur les plans proposés. Cela permet aux citoyens de participer activement à la planification de leur ville et de leur communauté.</p>
+            <h1 class="titrepresentation">Présentation de la structure</h1>
+            <p class="textpres">Nord-Est Géo Environnement accompagne depuis maintenant 10 ans les acteurs publics et
+              privés dans la construction de stratégies de développement territoriales. <br> <br> Le bureau d’études a été
+              créé en 2011 par deux Géographes,Yann Beauloye et Manuel Isnardon, désireux d’accompagner
+              les collectivités locales dans la construction de politiques de développement novatrices,
+              respectueuses des principes du développement durable et s’inscrivant dans les rails de la
+              transition énergétique. Convaincus par le fait qu’une prestation de conseil doit être à la pointe de
+              l’innovation, les deux associés-gérants ont décidé dès 2015 d’intégrer le monde de la recherche,
+              tout d’abord comme enseignants vacataires au sein de l’Université de Lorraine, et aujourd’hui
+              comme chercheurs. <br> <br> Ainsi, Yann Beauloye,
+              Docteur en Géographie – Aménagement des
+              territoires, est chercheur associé au sein du
+              laboratoire Loterr. Ses travaux sont spécialisés
+              dans l’accompagnement à l’ancrage territorial
+              des projets énergétiques. Ils ont été récompensés
+              en 2021 par le Grand Prix de l’Académie Lorraine des Sciences. Manuel Isnardon termine quant
+              à lui un doctorat de Géographie, en partenariat avec l’Andra, sur l’impact du site de stockage de
+              déchets radioactifs de Bure sur les dynamiques de développement territoriales locales.</p>
+          </div>
+        </section>
+        <section id="expertise">
+          <div class="swiper carousel">
+            <div class="swiper-wrapper">
+              <figure class="swiper-slide">
+                <img src="/img/01.jpg" alt="" />
+                <figcaption class="swiper-description">
+                  <h2>L’urbanisme réglementaire</h2>
+                  <p>
+                    Nord-Est Géo Environnement accompagne
+                    les collectivités dans la réalisation de leurs documents d’urbanisme et de
+                    planification (cartes communales, PLU, PLUi, PLH) que cela soit dans le cadre
+                    de procédure d’élaboration, de révision, de modification, de modification
+                    simplifiée, de déclaration de projets ou de mise en compatibilité.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="swiper-slide">
+                <img src="/img/02.jpg" alt="" />
+                <figcaption class="swiper-description">
+                  <h2>La stratégie territoriale et la planification urbaine</h2>
+                  <p>
+                    Nord-Est Géo
+                    Environnement travaille avec les collectivités territoriales mais également
+                    les acteurs privés à la réalisation d’études stratégiques (politiques de
+                    développement durable, Schéma d’Aménagement et de développement
+                    durable, Points d’étape ANRU, stratégies de redynamisation territoriales,
+                    etc.) et d’études de programmation. La programmation urbaine est une
+                    première étape déterminante dans la vie du projet. Elle permet au porteur de
+                    - 4 -
+                    projet d’identifier les besoins, exigences et contraintes qui vont s’appliquer à
+                    son opération et de définir en fonction les objectifs visés. A l’interface entre
+                    planification urbaine et urbanisme opérationnel, elle pose ainsi les bases
+                    pour permettre l’émergence et la réalisation du projet urbain. Il s’agit de
+                    traduire en éléments de programme les choix du porteur de projet en matière
+                    d’aménagement, de logement, d’activités, d’équipements publics, de services,
+                    en cohérence avec le contexte local et les besoins.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure class="swiper-slide">
+                <img src="/img/03.jpg" alt="" />
+                <figcaption class="swiper-description">
+                  <h2>Les études environnementales</h2>
+                  <p>
+                    Nord-Est Géo Environnement réalise des
+                    études type, état initial de l’environnement, études Trame Verte et Bleue (TVB),
+                    évaluations environnementales, études d’impact, dossiers cas par cas pour ses
+                    projets. Nous avons par ailleurs trois cabinets partenaires spécialisés dans l’en-
+                    vironnement (Ecolor, Biotope et Atelier des Territoires) pour la réalisation de
+                    prestations plus spécifiques (inventaires faune / flore / habitat, études zones hu-
+                    mides, expertises d’espèces protégées, études d’incidence Natura 2000, etc.).
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <button type="button" class="swiper-button-next"></button>
+            <button type="button" class="swiper-button-prev"></button>
           </div>
         </section>
         <section id="competences">
@@ -99,7 +164,6 @@
               </div>
           </div>
         </section>
-    
         <section id="equipe">
           <div class="blocequipe">
             <h1>Our Team</h1>
@@ -187,6 +251,18 @@
     }
   
     window.addEventListener('scroll', closeMenu);
-  </script>    
+  </script> 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.carousel', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      pagination: {
+        el: '.swiper-pagination'
+      }
+    })
+  </script>
 </body>
 </html>

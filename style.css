@@ -10,6 +10,32 @@ body{
   padding: 0;
   background-color: #93BFCF;
 }
+/*---Presentation---*/
+.texte-presentation  {
+  background-color: #93BFCF;
+  padding: 10px;
+  font-family: 'Century Gothic', sans-serif;
+}
+#textpresentation{
+  text-align: center;
+}
+.titrepresentation{
+  display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #EEE9DA;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    font-family: 'Century Gothic', sans-serif;
+}
+.textpres{
+  font-size: x-large;
+}
+@media screen and (max-width: 415px) {
+  .textpres{
+    font-size: medium;
+  }
+}
 /* Styles pour la barre de navigation fixe */
 #menu {
   position: fixed;
@@ -19,11 +45,11 @@ body{
   right: 0;
   z-index: 1000; /* pour s'assurer que la barre de navigation reste au-dessus des autres éléments */
   background-color: #93BFCF;
-  padding-top: 50px;
-  height: 10%;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
   justify-content: center;
-  opacity: 0.5;
+  font-size: large;
 }
 
 /* Styles de base pour la liste */
@@ -43,12 +69,18 @@ nav#menu li {
 
 nav#menu a.listtext {
   display: block;
-  padding: 0 10px;
   text-align: center;
   text-decoration: none;
   justify-content: center;
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+  margin-left: 1em;
+  margin-right: 1em;
+  cursor: pointer;
 }
-
+nav#menu a.listtext:hover {
+  color: #6096B4;
+}
 .hamburger {
   display: none;
   cursor: pointer;
@@ -59,20 +91,29 @@ nav#menu a.listtext {
   /* Affichage du menu hamburger */
   .hamburger {
       display: block;
+      padding-left: 40%;
+      color: white;
+      font-size: x-large;
   }
+  .hamburger:hover {
+    color: #6096B4;
+}
 
   /* Menu caché par défaut */
   nav#menu ul {
-      display: none;
       position: absolute;
-      background-color: #93BFCF;
+      background-color: #6096B4;
       width: 100%;
       flex-direction: column;
+      max-height: 0;
+      visibility: hidden;
+      transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out;
   }
 
   /* Affichage vertical du menu lorsqu'il est ouvert */
   nav#menu.show-menu ul {
-      display: flex;
+      max-height: 500px;
+      visibility: visible;
   }
 
   nav#menu li {
@@ -86,12 +127,16 @@ nav#menu a.listtext {
     left: 0;
     right: 0;
     z-index: 1000; /* pour s'assurer que la barre de navigation reste au-dessus des autres éléments */
-    background-color: #93BFCF;
+    background-color: #6096B4;
     padding-top: 10px;
-    height: 5%;
+    height: 7%;
     text-align: center;
     justify-content: space-between;
-    opacity: 0.5;
+  }
+  nav#menu a.listtext{
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
 }
 
@@ -299,21 +344,41 @@ section#contact input[type="submit"] {
 }
 
 /*SVG*/
+.bouton {
+  background-color: #93BFCF;
+  color: #EEE9DA;
+  border:2px solid #EEE9DA;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transform: rotate(90deg);
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+.bouton:hover{
+  background-color: #6096B4;
+  transform: scale(1.2) rotate(90deg);
+}
 #svg-container {
   position: relative;
-  height: 1080px;
+  height: 100%;
+  width: 100%;
 }
-.texte-presentation  {
-  background-color: #93BFCF;
-  padding: 10px;
-  font-family: 'Century Gothic', sans-serif;
+#Calque_1{
+  margin: auto;
+  height: 100vh;
+  width: 100%;
 }
 #svg-container img {
   top: 0;
   left: 0;
   z-index: -1;
   height: auto;
-  max-width: 100%;
+  height: 100%;
+  width: 100%;
 }
 g {
   transform: scale(1.3);
@@ -372,9 +437,113 @@ g {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 415px) {
+  #svg-container img {
+    padding-top: 10%;
+  }
   #svg-container {
-    width: 100%;
+    position: relative;
     height: 100%;
+    width: 100%;
+  }
+  #Calque_1{
+    margin: auto;
+    height: 70vh;
+    width: 100%;
+  }
+  .bouton {
+    visibility: hidden;
+  }
+}
+
+/*---Slider---*/
+
+/* General styling */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Demo styles end */
+.swiper {
+  width: 100%;
+          height: 700px;
+}
+.swiper-slide {
+  position: relative;
+  background-color: white
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper button {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: opacity 0.25s;
+}
+.swiper button:hover {
+  opacity: 0.8;
+}
+.swiper button::before,
+.swiper button::after {
+  font-size: 24px;
+}
+.swiper-pagination-bullet {
+  background-color: red;
+}
+
+.swiper-description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  isolation: isolate;
+  padding: 50px 25px 25px;
+  color: #fff;
+  width: 100%;
+}
+.swiper-description::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8) 50%);
+}
+.swiper-description h2 {
+  font-size: 42px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Century Gothic', sans-serif;
+  text-align: end;
+}
+.swiper-description p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-family: 'Century Gothic', sans-serif;
+}
+      @media screen and (max-width: 600px) {
+  .swiper {
+    max-width: 100%;
+  }
+  .swiper-description {
+    padding: 20px;
+  }
+  .swiper-description h2 {
+    font-size: 15px;
+  }
+  .swiper-description p {
+    font-size: 6px;
   }
 }
