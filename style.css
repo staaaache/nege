@@ -18,7 +18,6 @@ body{
 }
 #textpresentation{
   text-align: center;
-  padding: 10%;
 }
 .titrepresentation{
   display: inline-block;
@@ -37,6 +36,71 @@ body{
     font-size: medium;
   }
 }
+#Calque_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 50%;
+  transform: translate(35%, 0%);
+}
+
+g {
+  transform: translate(25%, 0%);
+}
+.cls-1 {
+  fill: #6096B4;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.cls-1:nth-child(1) {
+  animation-delay: 1.2s;
+}
+
+.cls-1:nth-child(2) {
+  animation-delay: 1.4s;
+}
+
+.cls-1:nth-child(3) {
+  animation-delay: 1.6s;
+}
+
+.cls-1:nth-child(4) {
+  animation-delay: 1.8s;
+}
+
+.cls-1:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.cls-1:nth-child(6) {
+  animation-delay: 2.2s;
+}
+
+.cls-1:nth-child(7) {
+  animation-delay: 2.4s;
+}
+
+.cls-1:nth-child(8) {
+  animation-delay: 2.6s;
+}
+
+.cls-1:nth-child(9) {
+  animation-delay: 2.8s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* Styles pour la barre de navigation fixe */
 #menu {
   position: fixed;
@@ -44,14 +108,15 @@ body{
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* pour s'assurer que la barre de navigation reste au-dessus des autres éléments */
-  background-color: white;
+  z-index: 1000;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
   justify-content: center;
   font-size: large;
+  background-color: rgba(0, 0, 0, 1); /* Opacité de 50% pour le fond */
 }
+
 
 /* Styles de base pour la liste */
 nav#menu ul {
@@ -73,11 +138,12 @@ nav#menu a.listtext {
   text-align: center;
   text-decoration: none;
   justify-content: center;
-  color: #93BFCF;
+  color: white;
   font-family: 'Century Gothic', sans-serif;
   margin-left: 1em;
   margin-right: 1em;
   cursor: pointer;
+  font-weight: bold;
 }
 nav#menu a.listtext:hover {
   color: #6096B4;
@@ -93,7 +159,7 @@ nav#menu a.listtext:hover {
   .hamburger {
       display: block;
       padding-left: 40%;
-      color: #93BFCF;
+      color: white;
       font-size: x-large;
   }
   .hamburger:hover {
@@ -103,7 +169,7 @@ nav#menu a.listtext:hover {
   /* Menu caché par défaut */
   nav#menu ul {
       position: absolute;
-      background-color: white;
+      background-color: rgba(0, 0, 0, 1); /* Opacité de 50% pour le fond */
       width: 100%;
       flex-direction: column;
       max-height: 0;
@@ -128,16 +194,17 @@ nav#menu a.listtext:hover {
     left: 0;
     right: 0;
     z-index: 1000; /* pour s'assurer que la barre de navigation reste au-dessus des autres éléments */
-    background-color: white;
+    background-color: black;
     padding-top: 10px;
     height: 7%;
     text-align: center;
     justify-content: space-between;
   }
   nav#menu a.listtext{
-    color: #93BFCF;
+    color: white;
     padding-top: 2%;
     padding-bottom: 2%;
+    font-weight: bold;
   }
 }
 
@@ -182,7 +249,6 @@ section#contact input[type="submit"] {
   text-align: center;
   background-color: white;
   margin: 0;
-  padding: 10%;
 }
 
 .blocequipe h1{
@@ -347,119 +413,6 @@ section#contact input[type="submit"] {
 }
 
 /*SVG*/
-.bouton {
-  background-color: white;
-  color: #EEE9DA;
-  border:2px solid #EEE9DA;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
-  transform: rotate(90deg);
-  margin-top: -100px;
-  margin-bottom: 50px;
-}
-.bouton:hover{
-  background-color: #6096B4;
-  transform: scale(1.2) rotate(90deg);
-}
-#svg-container {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-image: url(img/03.jpg);
-}
-#Calque_1{
-  margin: auto;
-  height: 100vh;
-  width: 100%;
-}
-#svg-container img {
-  top: 0;
-  left: 0;
-  z-index: -1;
-  height: auto;
-  height: 100%;
-  width: 100%;
-}
-g {
-  transform: scale(1.3);
-}
-.nancy{
-  position: absolute;
-}
-.cls-1 {
-  fill: white;
-  stroke: #fff;
-  stroke-miterlimit: 10;
-  stroke-width: .57px;
-  animation: appear 1s ease forwards;
-  opacity: 0;
-}
-.cls-1:nth-of-type(1) {
-  animation-delay: 2.1s;
-}
-
-.cls-1:nth-of-type(2) {
-  animation-delay: 2.3s;
-}
-
-.cls-1:nth-of-type(3) {
-  animation-delay: 1.5s;
-}
-
-.cls-1:nth-of-type(4) {
-  animation-delay: 2.2s;
-}
-
-.cls-1:nth-of-type(5) {
-  animation-delay: 1.4s;
-}
-
-.cls-1:nth-of-type(6) {
-  animation-delay: 1.8s;
-}
-
-.cls-1:nth-of-type(7) {
-  animation-delay: 2.1s;
-}
-
-.cls-1:nth-of-type(8) {
-  animation-delay: 1.6s;
-}
-
-.cls-1:nth-of-type(9) {
-  animation-delay: 2s;
-}
-
-
-@keyframes appear {
-  to {
-    opacity: 1;
-  }
-}
-
-@media only screen and (max-width: 415px) {
-  #svg-container img {
-    padding-top: 10%;
-  }
-  #svg-container {
-    position: relative;
-    height: 100%;
-    width: 100%;
-  }
-  #Calque_1{
-    margin: auto;
-    height: 70vh;
-    width: 100%;
-  }
-  .bouton {
-    visibility: hidden;
-  }
-}
-
 /*---Slider---*/
 
 /* General styling */
