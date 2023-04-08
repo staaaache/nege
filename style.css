@@ -43,7 +43,7 @@ body{
 .titrepresentation{
   display: inline-block;
     text-transform: uppercase;
-    border-bottom: 4px solid #EEE9DA;
+    border-bottom: 4px solid #6096B4;
     font-size: 20px;
     padding-bottom: 10px;
     margin-bottom: 50px;
@@ -264,38 +264,37 @@ section#contact input[type="submit"] {
   }
 }
 /*Style pour l'équipe*/
-.blocequipe{
+.equipebloc{
+  margin-top: 60px;
   text-align: center;
-  background-color: white;
-  margin: 0;
 }
 
-.blocequipe h1{
+.equipebloc h1{
   display: inline-block;
   text-transform: uppercase;
-  border-bottom: 4px solid #EEE9DA;
+  border-bottom: 4px solid #6096B4;
   font-size: 20px;
   padding-bottom: 10px;
   margin-top: 40px;
   font-family: 'Century Gothic', sans-serif;
 }
 
-.notre_equipe{
+.equipe_nege{
   width: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.notre_equipe .membre{
+.equipe_nege .membre{
   width: 250px;
   margin: 5px;
-  background: white;
+  background: #fff;
   padding: 20px 10px;
 }
 
-.notre_equipe .membre .membre_photo{
-  background: #e9e5fa;  
+.equipe_nege .membre .photo_membre{
+  background: #6096B4;  
   max-width: 190px;
   width: 100%;
   height: 190px;
@@ -306,13 +305,13 @@ section#contact input[type="submit"] {
   cursor: pointer;
 }
 
-.notre_equipe .membre .membre_photo img{
+.equipe_nege .membre .photo_membre img{
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
 
-.notre_equipe .membre h3{
+.equipe_nege .membre h3{
   text-transform: uppercase;
   font-size: 18px;
   line-height: 18px;
@@ -321,19 +320,19 @@ section#contact input[type="submit"] {
   font-family: 'Century Gothic', sans-serif;
 }
 
-.notre_equipe .membre span{
-  font-size: 20px;
+.equipe_nege .membre span{
+  font-size: 10px;
   font-family: 'Century Gothic', sans-serif;
 }
 
-.notre_equipe .membre p{
+.equipe_nege .membre p{
   margin-top: 20px;
   font-size: 14px;
   line-height: 20px;
   font-family: 'Century Gothic', sans-serif;
 }
 
-.notre_equipe .membre .membre_photo .reseaux{
+.equipe_nege .membre .photo_membre .reseaux_sociaux{
   position: absolute;
   top: 5px;
   left: 5px;
@@ -348,23 +347,18 @@ section#contact input[type="submit"] {
    transition: all 0.5s ease;
 }
 
-.notre_equipe .membre .membre_photo .item{
+.equipe_nege .membre .photo_membre .reseaux_sociaux .item{
   margin: 0 10px;
 }
 
-.notre_equipe .membre .membre_photo .fab{
+.equipe_nege .membre .photo_membre .reseaux_sociaux .fab{
   color: #6096B4;
   font-size: 20px;
 }
 
-.notre_equipe .membre .membre_photo:hover .reseaux{
+.equipe_nege .membre .photo_membre:hover .reseaux_sociaux{
   transform: scale(1);
 }
-
-.membre .reseaux .item:hover i {
-  color: #fff; /* Couleur de l'icône au survol */
-}
-
 /*----service----*/
 
 .services{
@@ -376,7 +370,7 @@ section#contact input[type="submit"] {
 .services h1{
   display: inline-block;
   text-transform: uppercase;
-  border-bottom: 4px solid #EEE9DA;
+  border-bottom: 4px solid #6096B4;
   font-size: 20px;
   padding-bottom: 10px;
   margin-top: 40px;

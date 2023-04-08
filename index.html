@@ -13,7 +13,7 @@
   <header>         
   </header>
   <main>
-        <div id="blackout">
+    <div id="blackout">
           <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660.48 494.29">
             <polygon class="cls-1" points="106.53 493.9 .39 293.49 49.98 267.66 156.38 466.52 106.53 493.9"/>
             <polygon class="cls-1" points="137.43 219.6 244.22 420.91 201.2 445.46 139.19 398.54 83.55 294.73 146.2 342.55 92.1 243.76 137.43 219.6"/>
@@ -159,49 +159,48 @@
           </div>
         </section>
         <section id="equipe">
-          <div class="blocequipe">
+          <div class="equipebloc">
             <h1>Our Team</h1>
-            <div class="notre_equipe">
+            <div class="equipe_nege">
                 <div class="membre">
-                  <div class="membre_photo">
-                     <img src="img/yann.jpg" alt="notre_equipe">
-                    <div class="reseaux">
+                  <div class="photo_membre">
+                     <img src="img/yann.jpg" alt="equipe_nege">
+                    <div class="reseaux_sociaux">
                        <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
                        <div class="twitter item"><i class="fab fa-twitter"></i></div>
                        <div class="instagram item"><i class="fab fa-instagram"></i></div>
                      </div>
                   </div>
-                  <h3>Yann Beauloye</h3><br>
-                  <span>Chef 2</span>
+                  <h3>john wright</h3>
+                  <span>CEO</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione perspiciatis, error deleniti quaerat beatae doloribus incidunt excepturi. Fugit deleniti accusantium neque hic quidem voluptatibus cumque.</p>
                 </div>
                 <div class="membre">
-                   <div class="membre_photo">
-                     <img src="img/yann.jpg" alt="notre_equipe">
-                     <div class="reseaux">
+                   <div class="photo_membre">
+                     <img src="img/yann.jpg" alt="equipe_nege">
+                     <div class="reseaux_sociaux">
                        <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
                        <div class="twitter item"><i class="fab fa-twitter"></i></div>
                        <div class="instagram item"><i class="fab fa-instagram"></i></div>
                      </div>
                   </div>
-                  <h3>Jennifer Morardet</h3><br>
-                  <span>Chef 3</span>
+                  <h3>barbara mori</h3>
+                  <span>Accountant</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione perspiciatis, error deleniti quaerat beatae doloribus incidunt excepturi. Fugit deleniti accusantium neque hic quidem voluptatibus cumque.</p>
               </div>
                 <div class="membre">
-                   <div class="membre_photo">
-                     <img src="img/yann.jpg" alt="notre_equipe">
-                     <div class="reseaux">
+                   <div class="photo_membre">
+                     <img src="img/yann.jpg" alt="equipe_nege">
+                     <div class="reseaux_sociaux">
                        <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
                        <div class="twitter item"><i class="fab fa-twitter"></i></div>
                        <div class="instagram item"><i class="fab fa-instagram"></i></div>
                      </div>
                   </div>
-                  <h3>Manuel Isnardon</h3><br>
-                  <span>Chef 1</span>
+                  <h3>harry dickens</h3>
+                  <span>Product Manager</span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione perspiciatis, error deleniti quaerat beatae doloribus incidunt excepturi. Fugit deleniti accusantium neque hic quidem voluptatibus cumque.</p>
-                </div> 
-            </div>
+              </div>
         </div>
         </section>
         <section id="references">
@@ -259,6 +258,16 @@
     disableOnInteraction: true // Optionnel : permet à l'utilisateur d'interagir avec le carousel sans arrêter le défilement automatique
   }
 });
+  </script>
+  <script>
+    // Récupérez la div blackout
+var blackoutDiv = document.getElementById("blackout");
+
+// Supprimez la div après 3 secondes
+setTimeout(function() {
+  blackoutDiv.style.display = "none";
+}, 10000);
+
   </script>
 </body>
 </html>
