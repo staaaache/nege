@@ -1,0 +1,62 @@
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+.mapboxgl-ctrl-logo {
+  fill: #fc0000 !important; /* Changer la couleur du logo en blanc */
+}
+
+.custom-popup {
+  background-color: #fff;
+  color: #000;
+  font-size: 6px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* Ajouter un style pour l'icône du marqueur */
+.mapboxgl-marker-circle {
+  fill: white; /* Couleur de fond */
+  stroke: #FFF; /* Couleur de contour */
+  stroke-width: 2px;
+}
+
+/* Ajouter un style pour l'animation du cercle */
+.mapboxgl-marker-circle-animation {
+  fill: none;
+  stroke: white;
+  stroke-width: 2px;
+  stroke-dasharray: 10, 5; /* Définir un motif de pointillé pour l'animation */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: animateMarkerCircle 2s linear infinite; /* Ajouter une animation */
+}
+
+/* Ajouter une animation keyframe pour l'animation */
+@keyframes animateMarkerCircle {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -30;
+  }
+}
+
+/* Ajouter un style personnalisé pour les boutons de zoom et de localisation */
+
+.mapboxgl-ctrl-icon,
+.mapboxgl-ctrl-zoom-in .mapboxgl-ctrl-icon,
+.mapboxgl-ctrl-zoom-out .mapboxgl-ctrl-icon {
+  color: green;
+  background-color: #6096B4;
+}
+
+.mapboxgl-ctrl-icon:hover,
+.mapboxgl-ctrl-zoom-in .mapboxgl-ctrl-icon:hover,
+.mapboxgl-ctrl-zoom-out .mapboxgl-ctrl-icon:hover {
+  background-color: white;
+}
+
+
+
+
+
+
