@@ -131,7 +131,6 @@ opacity: 1;
 }
 }
 /* Styles pour la barre de navigation fixe */
-
 #menu {
 position: fixed;
 display: flex;
@@ -144,7 +143,8 @@ padding-bottom: 30px;
 text-align: center;
 justify-content: center;
 font-size: large;
-transition: background-color 0.5s ease;
+transition: background-color 0.5s ease-in-out, visibility 0.5s ease-in-out;
+transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
 /* Styles de base pour la liste */
@@ -195,7 +195,7 @@ color: white;
 transition: color 0.5s ease;
 }
 .hamburger:hover {
-color: black;
+color: white;
 }
 
 /* Menu caché par défaut */
@@ -205,7 +205,9 @@ width: 100%;
 flex-direction: column;
 max-height: 0;
 visibility: hidden;
+transition: background-color 0.5s ease-in-out, visibility 0.5s ease-in-out;
 transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out;
+background-color: #6096B4;
 }
 
 /* Affichage vertical du menu lorsqu'il est ouvert */
@@ -213,6 +215,8 @@ nav#menu.show-menu ul {
 max-height: 500px;
 visibility: visible;
 background-color: rgba(96, 150, 180, 1); /* Opacité de 50% pour le fond */
+transition: background-color 0.5s ease-in-out, visibility 0.5s ease-in-out;
+transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
 nav#menu li {
@@ -230,11 +234,16 @@ padding-top: 10px;
 height: 7%;
 text-align: center;
 justify-content: space-between;
+background-color: #6096B4;
+transition: background-color 0.5s ease-in-out, visibility 0.5s ease-in-out;
+transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 nav#menu a.listtext{
 color: white;
 padding-top: 2%;
 padding-bottom: 2%;
+transition: background-color 0.5s ease-in-out, visibility 0.5s ease-in-out;
+transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 }
 

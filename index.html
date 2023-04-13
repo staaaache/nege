@@ -257,18 +257,18 @@
 </footer>
 <script>
 window.addEventListener('scroll', function() {
-    var nav = document.getElementById('menu');
-    var hamburger = document.querySelector('.hamburger');
-    if (window.pageYOffset > 500) {
-      nav.style.backgroundColor = 'rgba(96, 150, 180, 1)';
-      hamburger.style.color = '#ffff'; // couleur du hamburger lorsqu'on scroll
-    } else {
-      nav.style.backgroundColor = 'rgba(255, 255, 255, 0)';
-      hamburger.style.color = '#ffff'; // couleur du hamburger par défaut
+    if (window.innerWidth >= 768) {
+        var nav = document.getElementById('menu');
+        var hamburger = document.querySelector('.hamburger');
+        if (window.pageYOffset > 500) {
+            nav.style.backgroundColor = 'rgba(96, 150, 180, 1)';
+            hamburger.style.color = '#0000'; // couleur du hamburger lorsqu'on scroll
+        } else {
+            nav.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+            hamburger.style.color = '#0000'; // couleur du hamburger par défaut
+        }
     }
-  });
-</script>
-<script>
+});
 </script>
 <script>
 window.addEventListener('scroll', closeMenu);
