@@ -13,7 +13,7 @@
 <header>         
 </header>
 <main>
-<div id="blackout">
+  <div id="blackout">
     <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660.48 494.29">
       <polygon class="cls-1" points="106.53 493.9 .39 293.49 49.98 267.66 156.38 466.52 106.53 493.9"/>
       <polygon class="cls-1" points="137.43 219.6 244.22 420.91 201.2 445.46 139.19 398.54 83.55 294.73 146.2 342.55 92.1 243.76 137.43 219.6"/>
@@ -255,6 +255,19 @@
 <footer>
 <p>© 2023 - Tous droits réservés.</p>
 </footer>
+<script>
+window.addEventListener('scroll', function() {
+    var nav = document.getElementById('menu');
+    var hamburger = document.querySelector('.hamburger');
+    if (window.pageYOffset > 500) {
+      nav.style.backgroundColor = 'rgba(96, 150, 180, 1)';
+      hamburger.style.color = '#ffff'; // couleur du hamburger lorsqu'on scroll
+    } else {
+      nav.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+      hamburger.style.color = '#ffff'; // couleur du hamburger par défaut
+    }
+  });
+</script>
 <script>
 </script>
 <script>
