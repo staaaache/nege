@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
 header{
 background-color: beige;
 height: 100%;
@@ -10,6 +12,16 @@ margin: 0;
 padding: 0;
 background-color: white;
 }
+footer{
+background-color: #6096B4;
+color: white;
+font-family: 'Century Gothic', sans-serif;
+text-decoration: none;
+text-align: center;
+font-weight: bold;
+padding: 5%;
+
+}
 #blackout {
 position: fixed;
 top: 0;
@@ -17,7 +29,7 @@ left: 0;
 width: 100%;
 height: 100%;
 background-color: black;
-animation: fadeOut 10s linear forwards;
+animation: fadeOut 7s linear forwards;
 z-index: 1005;
 }
 @keyframes fadeOut {
@@ -38,18 +50,7 @@ font-family: 'Century Gothic', sans-serif;
 text-align: center;
 background-color: #6096B4;
 background-size: cover;
-padding-top: 15%;
-}
-
-.texte-presentation h1 {
-display: inline-block;
-text-transform: uppercase;
-border-bottom: 4px solid white;
-font-size: 20px;
-padding-bottom: 10px;
-margin-bottom: 50px;
-font-family: 'Century Gothic', sans-serif;
-color: white;
+padding: 5%;
 }
 
 .texte-presentation p {
@@ -59,6 +60,7 @@ background: rgba(255, 255, 255, 0.3);
 color: white;
 border: solid px white;
 padding: 5%;
+margin-top: 1em;
 }
 /*--Fin Présentation--*/
 
@@ -87,15 +89,15 @@ animation: fadeOut 3s linear forwards;
 }
 
 .cls-1:nth-child(1) {
-animation-delay: 0.2s;
+animation-delay: 0.7s;
 }
 
 .cls-1:nth-child(2) {
-animation-delay: 0.4s;
+animation-delay: 0.7s;
 }
 
 .cls-1:nth-child(3) {
-animation-delay: 0.6s;
+animation-delay: 0.4s;
 }
 
 .cls-1:nth-child(4) {
@@ -107,19 +109,19 @@ animation-delay: 1s;
 }
 
 .cls-1:nth-child(6) {
-animation-delay: 1.2s;
+animation-delay: 0.3s;
 }
 
 .cls-1:nth-child(7) {
-animation-delay: 1.4s;
+animation-delay: 0.8s;
 }
 
 .cls-1:nth-child(8) {
-animation-delay: 1.6s;
+animation-delay: 0.7s;
 }
 
 .cls-1:nth-child(9) {
-animation-delay: 1.8s;
+animation-delay: 0.8s;
 }
 
 @keyframes fadeIn {
@@ -168,14 +170,33 @@ text-align: center;
 text-decoration: none;
 justify-content: center;
 color: white;
-font-family: 'Century Gothic', sans-serif;
+font-family: 'Secular One', sans-serif;
 margin-left: 1em;
 margin-right: 1em;
 cursor: pointer;
 
 }
 nav#menu a.listtext:hover {
-color: black;
+color: #abcadb;
+}
+
+nav#menu a.listtextshowroom {
+display: block;
+text-align: center;
+text-decoration: none;
+justify-content: center;
+color: white;
+font-family: 'Secular One', sans-serif;
+margin-left: 1em;
+margin-right: 1em;
+padding-left: 1em;
+padding-right: 1em;
+cursor: pointer;
+background-color: #abcadb;
+border-radius: 20px;
+}
+nav#menu a.listtextshowroom:hover {
+background-color: #6096B4;
 }
 
 
@@ -257,13 +278,6 @@ padding: 2%;
 background-color: #6096B4;
 }
 
-section#contact h2 {
-margin-bottom: 1rem;
-font-family: 'Century Gothic', sans-serif;
-color: white;
-border-bottom: 4px solid white;
-}
-
 section#contact form {
 display: flex;
 flex-direction: column;
@@ -317,6 +331,26 @@ align-self: flex-end;
 cursor: pointer;
 }
 
+.coordonées {
+text-align: center;
+padding: 2%;
+font-family: 'Century Gothic', sans-serif;
+font-weight: bold;
+text-decoration: none;
+color: white;
+}
+
+.coordonées:hover {
+color: #abcadb;
+}
+
+#logo-coordonnées{
+text-align: center;
+color: white;
+font-size: x-large;
+}
+
+
 /* Styles pour les écrans mobiles */
 @media screen and (max-width: 768px) {
 section#contact {
@@ -325,20 +359,8 @@ padding: 1rem;
 }
 /*Style pour l'équipe*/
 .equipebloc{
-margin-top: 15%;
 text-align: center;
-margin-bottom: 10%;
-}
-
-.equipebloc h1{
-display: inline-block;
-text-transform: uppercase;
-border-bottom: 4px solid #6096B4;
-font-size: 20px;
-padding-bottom: 10px;
-margin-top: 40px;
-font-family: 'Century Gothic', sans-serif;
-color:#6096B4;
+padding: 5%;
 }
 
 .equipe_nege{
@@ -426,18 +448,7 @@ transform: scale(1);
 .services{
 background: white;
 text-align: center;
-padding-top: 10%;
-}
-
-.services h1{
-display: inline-block;
-text-transform: uppercase;
-border-bottom: 4px solid #6096B4;
-font-size: 20px;
-padding-bottom: 10px;
-margin-top: 40px;
-font-family: 'Century Gothic', sans-serif;
-color: #6096B4;
+padding: 5%;
 }
 .cen{
 max-width: 1200px;
@@ -661,30 +672,50 @@ flex-basis: 100%;
 }
 
 .menuprincipal {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 1;
-  text-decoration: none;
-  color: #6096B4;
-  font-family: 'Century Gothic', sans-serif;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 5%;
-  background-color: white;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  border-radius: 20px;
-  font-weight: bold;
+position: absolute;
+top: 10px;
+left: 10px;
+z-index: 1;
+text-decoration: none;
+left: 50%;
+transform: translate(-50%, -50%);
+top: 5%;
+color: white;
+font-family: 'Secular One', sans-serif;
+padding-left: 1em;
+padding-right: 1em;
+cursor: pointer;
+background-color: #abcadb;
+border-radius: 20px;
 }
-
 .menuprincipal:hover {
-  color: white;
-  background-color: #6096B4;
+color: white;
+background-color: #6096B4;
 }
 
 .menuprincipal p {
-  text-align: justify;
+text-align: justify;
+}
+
+/*---Titres---*/
+
+.titre-bleue{
+display: inline-block;
+text-transform: uppercase;
+border-bottom: 4px solid #6096B4;
+font-size: 20px;
+padding-bottom: 10px;
+margin-top: 40px;
+font-family: 'Secular One', sans-serif;
+color:#6096B4;
+}
+.titre-blanc{
+display: inline-block;
+text-transform: uppercase;
+border-bottom: 4px solid white;
+font-size: 20px;
+padding-bottom: 10px;
+margin-top: 40px;
+font-family: 'Secular One', sans-serif;
+color: white;
 }

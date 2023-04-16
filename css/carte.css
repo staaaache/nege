@@ -3,15 +3,6 @@ body { margin: 0; padding: 0; }
 .mapboxgl-ctrl-logo {
   fill: #fc0000 !important; /* Changer la couleur du logo en blanc */
 }
-
-.custom-popup {
-  background-color: #fff;
-  color: #000;
-  font-size: 6px;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
 /* Ajouter un style pour l'icône du marqueur */
 .mapboxgl-marker-circle {
   fill: white; /* Couleur de fond */
@@ -55,8 +46,39 @@ body { margin: 0; padding: 0; }
   background-color: white;
 }
 
+/* Pop UP */
 
+.mapboxgl-popup-content{
+  background-color: rgba(96, 150, 180, 0.5);
+  border-radius: 1em;
+}
 
+.mapboxgl-popup-content h3 {
+  background-color: #6096B4;
+  color: white;
+  text-align: justify;
+  padding: 1em;
+  border: solid 3px white;
+  font-family: 'Century Gothic', sans-serif;
+  border-radius: 1em;
+}
+
+.mapboxgl-popup-close-button {
+  background-color: white;
+  border-radius: 75%;
+  cursor: pointer;
+  position: absolute;
+  top: -30px;
+  height: 1.5em;
+  width: 1.5em;
+  color: #6096B4;
+  border: solid 1px white;
+}
+
+.mapboxgl-popup-close-button:hover {
+  background-color: #6096B4;
+  color: white;
+}
 
 
 

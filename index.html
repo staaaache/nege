@@ -32,12 +32,12 @@
         <div id="menu-container">
             <div class="hamburger" onclick="toggleMenu()">☰</div>
             <ul>
-                <li><a class="listtext" href="#competences">Compétences</a></li>
-                <li><a class="listtext" href="#textpresentation">Présentation</a></li>
-                <li><a class="listtext" href="#equipe">L'équipe</a></li>
-                <li><a class="listtext" href="#references">Références</a></li>
-                <li><a class="listtext" href="#contact">Contact</a></li>
-                <li><a class="listtext" href="carte.html">Showroom</a></li>
+                <li><a class="listtext" href="#competences">COMPETENCES</a></li>
+                <li><a class="listtext" href="#textpresentation">PRESENTATION</a></li>
+                <li><a class="listtext" href="#equipe">L'EQUIPE</a></li>
+                <li><a class="listtext" href="#references">REFERENCES</a></li>
+                <li><a class="listtext" href="#contact">CONTACT</a></li>
+                <li><a class="listtextshowroom" href="carte.html">SHOWROOM</a></li>
             </ul>
         </div>
       </nav>   
@@ -103,7 +103,7 @@
   </section>
   <section id="competences">
     <div class="services">
-        <h1>Nos compétences</h1>
+        <a class="titre-bleue"> Nos Compétences</a>
         <div class="cen">
           <div class="service">
             <i class="fa-solid fa-earth"></i>
@@ -140,7 +140,7 @@
   </section>
   <section id="textpresentation">
     <div class="texte-presentation">
-      <h1>Présentation de la structure</h1>
+      <a class="titre-blanc"> Présentation de la structure </a>
       <p>Nord-Est Géo Environnement accompagne depuis maintenant 10 ans les acteurs publics et
         privés dans la construction de stratégies de développement territoriales. <br> <br> Le bureau d’études a été
         créé en 2011 par deux Géographes,Yann Beauloye et Manuel Isnardon, désireux d’accompagner
@@ -162,7 +162,7 @@
   </section>
   <section id="equipe">
     <div class="equipebloc">
-      <h1>L'Equipe</h1>
+      <a class="titre-bleue">Notre Equipe </a>
       <div class="equipe_nege">
           <div class="membre">
             <div class="photo_membre">
@@ -173,8 +173,8 @@
                   <div class="instagram item"><i class="fab fa-instagram"></i></div>
                 </div>
             </div>
-            <h3>john wright</h3>
-            <span>CEO</span>
+            <h3>Manuel Isnardon</h3>
+            <span>Co-Gérant</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione perspiciatis, error deleniti quaerat beatae doloribus incidunt excepturi. Fugit deleniti accusantium neque hic quidem voluptatibus cumque.</p>
           </div>
           <div class="membre">
@@ -186,8 +186,8 @@
                   <div class="instagram item"><i class="fab fa-instagram"></i></div>
                 </div>
             </div>
-            <h3>barbara mori</h3>
-            <span>Accountant</span>
+            <h3>Yann Beauloye</h3>
+            <span>Co-Gérant</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione perspiciatis, error deleniti quaerat beatae doloribus incidunt excepturi. Fugit deleniti accusantium neque hic quidem voluptatibus cumque.</p>
         </div>
           <div class="membre">
@@ -199,8 +199,8 @@
                   <div class="instagram item"><i class="fab fa-instagram"></i></div>
                 </div>
             </div>
-            <h3>harry dickens</h3>
-            <span>Product Manager</span>
+            <h3>Jennifer Morardet</h3>
+            <span>Technicienne</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione perspiciatis, error deleniti quaerat beatae doloribus incidunt excepturi. Fugit deleniti accusantium neque hic quidem voluptatibus cumque.</p>
         </div>
   </div>
@@ -210,37 +210,37 @@
   <figure class="gallery-item">
     <img src="img/01.jpg" alt="" class="item-image" />
     <figcaption class="item-description">
-      <h2 class="name">Jane Doe</h2>
+      <h2 class="name">Projet 1</h2>
     </figcaption>
   </figure>
   <figure class="gallery-item">
     <img src="img/03.jpg" alt="" class="item-image" />
     <figcaption class="item-description">
-      <h2 class="name">Jane Doe</h2>
+      <h2 class="name">Projet 2</h2>
     </figcaption>
   </figure>
   <figure class="gallery-item">
     <img src="img/01.jpg" alt="" class="item-image" />
     <figcaption class="item-description">
-      <h2 class="name">John Doe</h2>
+      <h2 class="name">Projet 3</h2>
     </figcaption>
   </figure>
   <figure class="gallery-item">
     <img src="img/03.jpg" alt="" class="item-image" />
     <figcaption class="item-description">
-      <h2 class="name">John Doe</h2>
+      <h2 class="name">Projet 4</h2>
     </figcaption>
   </figure>
   <figure class="gallery-item">
     <img src="img/01.jpg" alt="" class="item-image" />
     <figcaption class="item-description">
-      <h2 class="name">Jane Doe</h2>
+      <h2 class="name">Projet 5</h2>
     </figcaption>
   </figure>
 </div>
   </section>
   <section id="contact">
-    <h2>Contactez-nous</h2>
+    <a class="titre-blanc">Nous Contacter</a>
     <form action="traitement.php" method="post" enctype="text/plain">
       <label for="nom">Nom:</label>
       <input class="formulaire" type="text" id="nom" name="nom" required><br>
@@ -249,11 +249,17 @@
       <label for="message">Message:</label>
       <textarea class="formulaire-message" id="message" name="message" rows="4" cols="50" required></textarea><br>
       <input class="envoyer" type="submit" value="Envoyer">
+      <i class="fa-solid fa-location-dot" id="logo-coordonnées"></i>
+      <a class="coordonées" href="https://www.google.com/maps/search/?api=1&query=123+Rue+MacMahon">Adresse : 123 Rue MacMahon</a>
+      <i class="fa-solid fa-phone" id="logo-coordonnées"></i>
+      <a class="coordonées" href="tel:0102030405" >Tel : 01 02 03 04 05</a>
+      <i class="fa-solid fa-envelope" id="logo-coordonnées"></i>
+      <a class="coordonées" href="mailto:nege.associes@gmail.com">Mail : nege.associes@gmail.com</a>
     </form>
   </section>
 </main>
 <footer>
-<p>© 2023 - Tous droits réservés.</p>
+<p>© 2023 - Tous droits réservés - NEGE</p>
 </footer>
 <script>
 window.addEventListener('scroll', function() {
@@ -309,7 +315,7 @@ var blackoutDiv = document.getElementById("blackout");
 // Supprimez la div après 3 secondes
 setTimeout(function() {
 blackoutDiv.style.display = "none";
-}, 10000);
+}, 6000);
 </script>
 </body>
 </html>
