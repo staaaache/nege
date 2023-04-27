@@ -1,5 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+/*--MenuIntroDessin--*/
+#Calque_2 {
+top: -130px;
+height: 80%;
+position: relative;
+}
+.oiseaux {
+cursor: pointer;
+animation: opacity 2s ease-in-out infinite;
+}
 
+@keyframes opacity {
+0% {
+opacity: 0;
+}
+50% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+
+.oiseaux path:hover{
+fill: white;
+}
+
+
+/*--FinMenuIntroDessin--*/
 header{
 background-color: beige;
 height: 100%;
@@ -13,7 +41,7 @@ padding: 0;
 background-color: white;
 }
 footer{
-background-color: #6096B4;
+background-color: #81d3da;
 color: white;
 font-family: 'Century Gothic', sans-serif;
 text-decoration: none;
@@ -22,13 +50,14 @@ font-weight: bold;
 padding: 5%;
 
 }
+
 #blackout {
 position: fixed;
 top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: black;
+background-color: #81d3da;
 animation: fadeOut 7s linear forwards;
 z-index: 1005;
 }
@@ -43,12 +72,80 @@ opacity: 1;
 opacity: 0;
 }
 }
+@media screen and (max-width: 768px) {
+.texte-presentation p{
+font-size: medium;
+}
+}
+#Calque_1 {
+width: 80%;
+height: 80%;
+transform: translate(-50%, -50%);
+position: relative;
+top: 50%;
+left: 50%;
+}
+
+
+.negelogo {
+fill: white;
+opacity: 0;
+animation-name: fadeIn;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+animation: fadeOut 3s linear forwards;
+}
+
+.negelogo:nth-child(1) {
+animation-delay: 0.7s;
+}
+
+.negelogo:nth-child(2) {
+animation-delay: 0.7s;
+}
+
+.negelogo:nth-child(3) {
+animation-delay: 0.4s;
+}
+
+.negelogo:nth-child(4) {
+animation-delay: 0.8s;
+}
+
+.negelogo:nth-child(5) {
+animation-delay: 1s;
+}
+
+.negelogo:nth-child(6) {
+animation-delay: 0.3s;
+}
+
+.negelogo:nth-child(7) {
+animation-delay: 0.8s;
+}
+
+.negelogo:nth-child(8) {
+animation-delay: 0.7s;
+}
+
+.negelogo:nth-child(9) {
+animation-delay: 0.8s;
+}
+
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
 /*---Presentation---*/
 .texte-presentation  {
 background-color: white;
 font-family: 'Century Gothic', sans-serif;
 text-align: center;
-background-color: #6096B4;
+background-color: #81d3da;
 background-size: cover;
 padding: 5%;
 }
@@ -69,205 +166,147 @@ margin-top: 1em;
 font-size: medium;
 }
 }
-#Calque_1 {
-width: 80%;
-height: 80%;
-transform: translate(-50%, -50%);
-position: relative;
-top: 50%;
-left: 50%;
+/* Navbar */
+::-webkit-scrollbar {
+width: 10px
 }
-
-
-.cls-1 {
-fill: white;
-opacity: 0;
-animation-name: fadeIn;
-animation-duration: 1s;
-animation-fill-mode: forwards;
-animation: fadeOut 3s linear forwards;
+::-webkit-scrollbar-track {
+background: #f1f1f1
 }
-
-.cls-1:nth-child(1) {
-animation-delay: 0.7s;
+::-webkit-scrollbar-thumb {
+background: #888
 }
-
-.cls-1:nth-child(2) {
-animation-delay: 0.7s;
+::selection {
+background: rgb(0,123,255,.3)
 }
-
-.cls-1:nth-child(3) {
-animation-delay: 0.4s;
+.content {
+max-width: 1250px;
+margin: auto;
+padding: 0 30px
 }
-
-.cls-1:nth-child(4) {
-animation-delay: 0.8s;
-}
-
-.cls-1:nth-child(5) {
-animation-delay: 1s;
-}
-
-.cls-1:nth-child(6) {
-animation-delay: 0.3s;
-}
-
-.cls-1:nth-child(7) {
-animation-delay: 0.8s;
-}
-
-.cls-1:nth-child(8) {
-animation-delay: 0.7s;
-}
-
-.cls-1:nth-child(9) {
-animation-delay: 0.8s;
-}
-
-@keyframes fadeIn {
-from {
-opacity: 0;
-}
-to {
-opacity: 1;
-}
-}
-/* Styles pour la barre de navigation fixe */
-#menu {
+.navbar {
 position: fixed;
-display: flex;
-top: 0;
-left: 0;
-right: 0;
-z-index: 1000;
-padding-top: 30px;
-padding-bottom: 30px;
-text-align: center;
-justify-content: center;
-font-size: large;
-transition: background-color 0.5s ease-in-out, visibility 0.5s ease-in-out;
-transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out;
-}
-
-/* Styles de base pour la liste */
-nav#menu ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-text-align: center;
-display: flex;
-justify-content: center;
-}
-
-nav#menu li {
-float: left;
-}
-
-nav#menu a.listtext {
-display: block;
-text-align: center;
-text-decoration: none;
-justify-content: center;
-color: white;
-font-family: 'Secular One', sans-serif;
-margin-left: 1em;
-margin-right: 1em;
-cursor: pointer;
-
-}
-nav#menu a.listtext:hover {
-color: #abcadb;
-}
-
-nav#menu a.listtextshowroom {
-display: block;
-text-align: center;
-text-decoration: none;
-justify-content: center;
-color: white;
-font-family: 'Secular One', sans-serif;
-margin-left: 1em;
-margin-right: 1em;
-padding-left: 1em;
-padding-right: 1em;
-cursor: pointer;
-background-color: #abcadb;
-border-radius: 20px;
-}
-nav#menu a.listtextshowroom:hover {
-background-color: #6096B4;
-}
-
-
-.hamburger {
-display: none;
-cursor: pointer;
-}
-
-/* Styles pour les écrans mobiles */
-@media screen and (max-width: 768px) {
-/* Affichage du menu hamburger */
-.hamburger {
-display: block;
-font-size: x-large;
-padding-left: 10px;
-color: white;
-transition: color 0.5s ease;
-}
-.hamburger:hover {
-color: white;
-}
-
-/* Menu caché par défaut */
-nav#menu ul {
-position: absolute;
 width: 100%;
-flex-direction: column;
-max-height: 0;
-visibility: hidden;
-transition: background-color 0.5s ease-in-out, visibility 0.5s ease-in-out;
-transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out;
-background-color: #6096B4;
+z-index: 2;
+padding: 25px 0;
+transition: all .3s ease
 }
-
-/* Affichage vertical du menu lorsqu'il est ouvert */
-nav#menu.show-menu ul {
-max-height: 500px;
-visibility: visible;
-background-color: rgba(96, 150, 180, 1); /* Opacité de 50% pour le fond */
-transition: background-color 0.5s ease-in-out, visibility 0.5s ease-in-out;
-transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out;
+.navbar.sticky {
+background: #81d3da;
+padding: 10px 0;
+box-shadow: 0 3px 5px 0 rgba(0,0,0,.1)
 }
-
-nav#menu li {
-float: none;
-}
-
-#menu {
-position: fixed;
+.navbar .content {
 display: flex;
+align-items: center;
+justify-content: space-between
+}
+.navbar .logo a {
+color: #fff;
+font-size: 30px;
+font-weight: 600;
+text-decoration: none;
+font-family: 'Century Gothic', sans-serif;
+}
+.navbar .menu-list {
+display: inline-flex
+}
+.menu-list li {
+list-style: none
+}
+.menu-list li a {
+color: #fff;
+font-size: 18px;
+font-weight: 500;
+margin-left: 25px;
+text-decoration: none;
+transition: all .3s ease;
+font-family: 'Century Gothic', sans-serif;
+font-weight: bold;
+}
+.menu-list li a:hover {
+color: #da5252
+}
+.about {
+padding: 30px 0
+}
+.about .title {
+font-size: 38px;
+font-weight: 700
+}
+.about p {
+padding-top: 20px;
+text-align: justify
+}
+.icon {
+color: #fff;
+font-size: 20px;
+cursor: pointer;
+display: none
+}
+.menu-list .cancel-btn {
+position: absolute;
+right: 30px;
+top: 20px
+}
+@media (max-width:1230px) {
+.content {
+padding: 0 60px
+}
+}
+@media (max-width:1100px) {
+.content {
+padding: 0 40px
+}
+}
+@media (max-width:900px) {
+.content {
+padding: 0 30px
+}
+}
+@media (max-width:868px) {
+body.disabled {
+overflow: hidden
+}
+.icon {
+display: block
+}
+.icon.hide {
+display: none
+}
+.navbar .menu-list {
+position: fixed;
+height: 100vh;
+width: 100%;
+max-width: 400px;
+left: -100%;
 top: 0;
-left: 0;
-right: 0;
-z-index: 1000; /* pour s'assurer que la barre de navigation reste au-dessus des autres éléments */
-padding-top: 10px;
-height: 7%;
+display: block;
+padding: 40px 0;
 text-align: center;
-justify-content: space-between;
-background-color: #6096B4;
-transition: background-color 0.5s ease-in-out, visibility 0.5s ease-in-out;
-transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out;
+background: #81d3da;
+transition: all .3s ease
 }
-nav#menu a.listtext{
-color: white;
-padding-top: 2%;
-padding-bottom: 2%;
-transition: background-color 0.5s ease-in-out, visibility 0.5s ease-in-out;
-transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out;
+.navbar.show .menu-list {
+left: 0
+}
+.navbar .menu-list li {
+margin-top: 45px
+}
+.navbar .menu-list li a {
+font-size: 23px;
+margin-left: -100%;
+transition: .6s cubic-bezier(.68, -.55, .265, 1.55)
+}
+.navbar.show .menu-list li a {
+margin-left: 0
 }
 }
-
+@media (max-width:380px) {
+.navbar .logo a {
+font-size: 27px
+}
+}
 /* Styles de base pour la section contact */
 section#contact {
 max-width: 100%;
@@ -275,7 +314,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding: 2%;
-background-color: #6096B4;
+background-color: #81d3da;
 }
 
 section#contact form {
@@ -297,7 +336,7 @@ border-radius: 10px;
 border: solid 2px white;
 height: 3em;
 font-family: 'Century Gothic', sans-serif;
-color: #6096B4;
+color: #81d3da;
 font-weight: bold;
 }
 
@@ -306,7 +345,7 @@ border-radius: 10px;
 border: solid 2px white;
 height: 5em;
 font-family: 'Century Gothic', sans-serif;
-color: #6096B4;
+color: #81d3da;
 font-weight: bold;
 }
 
@@ -314,7 +353,7 @@ font-weight: bold;
 border-radius: 10px;
 border: solid 2px white;
 height: 5em;
-background-color: #6096B4;
+background-color: #81d3da;
 color: white;
 font-family: 'Century Gothic', sans-serif;
 font-weight: bold;
@@ -322,7 +361,7 @@ font-weight: bold;
 
 .envoyer:hover {
 background-color: white;
-color: #6096B4;
+color: #81d3da;
 }
 
 
@@ -378,7 +417,7 @@ padding: 20px 10px;
 }
 
 .equipe_nege .membre .photo_membre{
-background: #6096B4;  
+background: #81d3da;  
 max-width: 190px;
 width: 100%;
 height: 190px;
@@ -436,7 +475,7 @@ margin: 0 10px;
 }
 
 .equipe_nege .membre .photo_membre .reseaux_sociaux .fab{
-color: #6096B4;
+color: #81d3da;
 font-size: 20px;
 }
 
@@ -469,7 +508,7 @@ transition: 0.4s;
 background: #EEE9DA;
 }
 .service i {
-color: #6096B4;
+color: #81d3da;
 font-size: 34px;
 margin-bottom: 30px;
 }
@@ -512,92 +551,8 @@ padding: 0;
 box-sizing: border-box;
 }
 /* Demo styles end */
-.swiper {
-width: 100%;
-height: 100vh;
-}
-.swiper-slide {
-position: relative;
-background-color: white
-}
-.swiper-slide img {
-display: block;
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
-.swiper button {
-width: 50px;
-height: 50px;
-color: #fff;
-background: transparent;
-border: none;
-outline: none;
-transition: opacity 0.25s;
-}
-.swiper button:hover {
-opacity: 0.8;
-}
-.swiper button::before,
-.swiper button::after {
-font-size: 24px;
-}
-.swiper-pagination-bullet {
-background-color: red;
-}
-
-.swiper-description {
-position: absolute;
-left: 0;
-bottom: 0;
-isolation: isolate;
-padding: 50px 25px 25px;
-color: #fff;
-width: 100%;
-}
-.swiper-description::before {
-content: '';
-position: absolute;
-left: 0;
-bottom: 0;
-z-index: -1;
-width: 100%;
-height: 100%;
-background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8) 50%);
-}
-.swiper-description h2 {
-font-size: 42px;
-letter-spacing: 2px;
-text-transform: uppercase;
-font-family: 'Century Gothic', sans-serif;
-text-align: end;
-}
-.swiper-description p {
-font-size: 14px;
-margin-bottom: 15px;
-font-family: 'Century Gothic', sans-serif;
-}
-@media screen and (max-width: 600px) {
-.swiper {
-max-width: 100%;
-}
-.swiper-description {
-padding: 20px;
-}
-.swiper-description h2 {
-font-size: 20px;
-}
-.swiper-description p {
-font-size: 12px;
-}
-}
 
 /*--realisations--*/
-
-.realisations {
-max-width: 960px;
-margin-inline: auto;
-}
 .gallery-wrapper {
 display: flex;
 margin-top: 2%;
@@ -671,6 +626,31 @@ flex-basis: 100%;
 }
 }
 
+/*---Titres---*/
+
+.titre-bleue{
+display: inline-block;
+text-transform: uppercase;
+border-bottom: 4px solid #81d3da;
+font-size: 20px;
+padding-bottom: 10px;
+margin-top: 40px;
+font-family: 'Secular One', sans-serif;
+color:#81d3da;
+}
+.titre-blanc{
+display: inline-block;
+text-transform: uppercase;
+border-bottom: 4px solid white;
+font-size: 20px;
+padding-bottom: 10px;
+margin-top: 40px;
+font-family: 'Secular One', sans-serif;
+color: white;
+}
+
+/*MenuCarte*/
+
 .menuprincipal {
 position: absolute;
 top: 10px;
@@ -695,27 +675,4 @@ background-color: #6096B4;
 
 .menuprincipal p {
 text-align: justify;
-}
-
-/*---Titres---*/
-
-.titre-bleue{
-display: inline-block;
-text-transform: uppercase;
-border-bottom: 4px solid #6096B4;
-font-size: 20px;
-padding-bottom: 10px;
-margin-top: 40px;
-font-family: 'Secular One', sans-serif;
-color:#6096B4;
-}
-.titre-blanc{
-display: inline-block;
-text-transform: uppercase;
-border-bottom: 4px solid white;
-font-size: 20px;
-padding-bottom: 10px;
-margin-top: 40px;
-font-family: 'Secular One', sans-serif;
-color: white;
 }

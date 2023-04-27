@@ -4,7 +4,7 @@ const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/staache/clge4omt6002u01l7dsft4b40',
     center: [6.1844, 48.6921],
-    zoom: 1,
+    zoom: 5,
     attributionControl: false, // Désactiver le contrôle d'attribution
   });
 
